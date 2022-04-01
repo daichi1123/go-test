@@ -3,7 +3,8 @@ package structtest
 import "testing"
 
 func TestPerimeter(t *testing.T) {
-	got := Perimeter(10.0, 10.0)
+	rectagle := Rectangle{10.0, 10.0}
+	got := Perimeter(rectagle)
 	want := 40.0
 
 	if got != want {
