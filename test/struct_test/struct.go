@@ -1,8 +1,15 @@
 package structtest
 
+import "math"
+
 type Rectangle struct {
 	Width  float64
 	Height float64
+}
+
+// インターフェースを使用することにより様々な型で使用できる関数の作成が可能になる
+type Shape interface {
+	Area() float64
 }
 
 // テストの正解
